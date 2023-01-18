@@ -1,55 +1,73 @@
-# Angular basic
+# Welcome Users
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [Angular](https://angular.io/) apps in minutes. Use this repo with the [Angular quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=angular) to build and customize a new static site.
+Bot Framework v4 welcome users bot sample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+This bot has been created using [Bot Framework](https://dev.botframework.com), is shows how to welcome users when they join the conversation.
 
-## Project setup
+## Prerequisites
 
-```bash
-npm install
-```
+- [Node.js](https://nodejs.org) version 10.14 or higher
 
-### Start the dev server
+    ```bash
+    # determine node version
+    node --version
+    ```
 
-```bash
-npm run swa:start
-```
+## To try this sample
 
-> Note: This command will use the local configuration file `swa-cli.config.json`.
+- Clone the repository
 
-### Run unit tests
+    ```bash
+    git clone https://github.com/Microsoft/botbuilder-samples.git
+    ```
 
-```bash
-npm test
-```
+- In a terminal, navigate to `samples/javascript_nodejs/03.welcome-users`
 
-### Run e2e tests
+    ```bash
+    cd samples/javascript_nodejs/03.welcome-users
+    ```
 
-```bash
-npm run e2e
-```
+- Install modules
 
-### Lints and fixes files
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run lint
-```
+- Start the bot
 
-### Compiles and minifies for production
+    ```bash
+    npm start
+    ```
 
-```bash
-npm run build
-```
+## Testing the bot using Bot Framework Emulator
 
-### Login to Azure
+[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
 
-```bash
-npm run swa:login
-```
+- Install the latest Bot Framework Emulator from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
-### Deploy to Azure
+### Connect to the bot using Bot Framework Emulator
 
-```bash
-npm run swa:deploy
-```
+- Launch Bot Framework Emulator
+- File -> Open Bot
+- Enter a Bot URL of `http://localhost:3978/api/messages`
+
+## Interacting with the bot
+
+The primary goal when creating any bot is to engage your user in a meaningful conversation. One of the best ways to achieve this goal is to ensure that from the moment a user first connects, they understand your bot’s main purpose and capabilities, the reason your bot was created. See [Send welcome message to users](https://aka.ms/botframework-welcome-instructions) for additional information on how a bot can welcome users to a conversation.
+
+## Deploy the bot to Azure
+
+To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
+
+## Further reading
+
+- [Bot Framework Documentation](https://docs.botframework.com)
+- [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
+- [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
+- [Azure Bot Service Introduction](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- [Azure Bot Service Documentation](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0)
+- [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
+- [Azure Portal](https://portal.azure.com)
+- [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
+- [Restify](https://www.npmjs.com/package/restify)
+- [dotenv](https://www.npmjs.com/package/dotenv)
